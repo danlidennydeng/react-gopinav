@@ -9,4 +9,5 @@ const ChildComponent1 = (props) => {
     )
 }
 
+// this child is to access the property of a parent
 export default ChildComponent1

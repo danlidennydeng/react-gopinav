@@ -25,5 +25,5 @@ class ParentComponent1 extends Component {
         )
     }
 }
-
+// this parent allows a child to access its property
 export default ParentComponent1
