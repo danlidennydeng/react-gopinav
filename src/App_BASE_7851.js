@@ -6,17 +6,13 @@ import Message from './components/Message'
 import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick'
 import ClassClick from './components/ClassClick'
-import ParentComponent1 from './components/ParentComponent1'
-import UserGreeting3 from './components/UserGreeting3';
+import EventBind from './components/EventBind'
 
 function App() {
   return (
     <div className="App">
-      <UserGreeting3 />
+      <EventBind />
       <hr />
-      <ParentComponent1 />
-      <hr />
-      
       <ClassClick />
       <hr />
       <FunctionClick />
@@ -29,7 +25,8 @@ function App() {
         <button>Press</button>
       </Greet>
       <hr />
-      <Greet name="Denny" heroName="Developer">
+      <Greet name="Diana" heroName="Wonderwoman">
+      <hr />
       </Greet>
       <hr />
       <Welcome name="Diana" heroName="Wonderwoman">
