@@ -7,11 +7,14 @@ import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick'
 import ClassClick from './components/ClassClick'
 import ParentComponent1 from './components/ParentComponent1'
-import UserGreeting3 from './components/UserGreeting3';
+import UserGreeting3 from './components/UserGreeting3'
+import NameList2 from './components/NameList2'
 
 function App() {
   return (
     <div className="App">
+      <NameList2 />
+      <hr />
       <UserGreeting3 />
       <hr />
       <ParentComponent1 />
