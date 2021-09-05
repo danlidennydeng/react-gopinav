@@ -9,10 +9,13 @@ import ClassClick from './components/ClassClick'
 import ParentComponent1 from './components/ParentComponent1'
 import UserGreeting3 from './components/UserGreeting3'
 import NameList2 from './components/NameList2'
+import NameList from './components/NameList'
 
 function App() {
   return (
     <div className="App">
+      <NameList />
+      <hr />
       <NameList2 />
       <hr />
       <UserGreeting3 />
