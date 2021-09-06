@@ -10,10 +10,20 @@ import ParentComponent1 from './components/ParentComponent1'
 import UserGreeting3 from './components/UserGreeting3'
 import NameList2 from './components/NameList2'
 import NameList from './components/NameList'
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyles.css'
+import styles from './appStyles.module.css'
 
 function App() {
   return (
     <div className="App">
+      <h2 className='error'>Error</h2>
+      <h2 className={styles.success}>Success</h2>
+      <Inline />
+      <hr />
+       <Stylesheet primary={true}/>
+      <hr />
       <NameList />
       <hr />
       <NameList2 />
