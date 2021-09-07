@@ -16,10 +16,16 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form'
 import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 function App() {
   return (
     <div className="App">
+      <Table />
+      <hr />
+      <FragmentDemo />
+      <hr />
       <LifecycleA />
       <hr />
       <Form />

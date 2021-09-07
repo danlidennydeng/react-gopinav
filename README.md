@@ -5,3 +5,5 @@ React Tutorial by Codevolution
 tried on white rock
 
 git pulled on white rock and it works
+
+Advanced concepts starts on lesson 25.
