@@ -1,6 +1,6 @@
 
 import './App.css';
-import Greet from './components/Greet'
+// import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Message from './components/Message'
 import Counter from './components/Counter'
@@ -15,10 +15,13 @@ import Inline from './components/Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form'
+import LifecycleA from './components/LifecycleA';
 
 function App() {
   return (
     <div className="App">
+      <LifecycleA />
+      <hr />
       <Form />
       <hr />
       <h2 className='error'>Error</h2>
@@ -40,7 +43,7 @@ function App() {
       <hr />
       <FunctionClick />
       <hr />
-      <Greet name="Bruce" heroName="Batman">
+      {/* <Greet name="Bruce" heroName="Batman">
         <p>wei</p>
       </Greet>
       <hr />
@@ -50,7 +53,7 @@ function App() {
       <hr />
       <Greet name="Denny" heroName="Developer">
       </Greet>
-      <hr />
+      <hr /> */}
       <Welcome name="Diana" heroName="Wonderwoman">
       <button>Press</button>
       </Welcome>
