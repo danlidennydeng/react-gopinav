@@ -41,3 +41,7 @@ Summary
 * If there is no difference, the component is not re-rendered - performance boost.
 * It is a good idea to ensure that all the children component are also pure to avoid unexpected behaviour.
 * Never muteate the state. Always return a new object that reflects the new state.
+
+---------------------------------------------------------------------------------------
+
+memo works as the same way as PureComponent for function instead of class.

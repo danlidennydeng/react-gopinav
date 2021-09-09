@@ -1,6 +1,7 @@
 
 import './App.css';
-import ParentComp2 from './components/ParentComp2';
+//import ParentComp2 from './components/ParentComp2';
+import ParentCompMemo from './components/ParentCompMemo';
 // import Greet from './components/Greet'
 // import Welcome from './components/Welcome'
 // import Message from './components/Message'
@@ -24,7 +25,7 @@ import ParentComp2 from './components/ParentComp2';
 function App() {
   return (
     <div className="App">
-      <ParentComp2 />
+      <ParentCompMemo />
       {/* <ParentComp />
       <hr /> */}
       {/* <Table />
