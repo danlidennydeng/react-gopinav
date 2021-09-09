@@ -33,3 +33,11 @@ var ab_eq = (a ==== b); // false, due to different references.
 var ac_eq = (a ==== c); // true since they point to the same references.
 
 Pure Component can stop unnessary re-rendering if the props and state are the same, this leads to performance boost.
+
+Summary
+
+* We can create a component by extending the PureComponent class
+* A PureComponent implements the shouldComponentUpdate lifecycle method by performing a shallow comparison on the props and state of the component
+* If there is no difference, the component is not re-rendered - performance boost.
+* It is a good idea to ensure that all the children component are also pure to avoid unexpected behaviour.
+* Never muteate the state. Always return a new object that reflects the new state.
