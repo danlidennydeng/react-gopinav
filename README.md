@@ -45,3 +45,5 @@ Summary
 ---------------------------------------------------------------------------------------
 
 memo works as the same way as PureComponent for function instead of class.
+
+Ref can work in class, cannot work in function.

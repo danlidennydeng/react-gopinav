@@ -1,6 +1,7 @@
 
 import './App.css';
-import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+// import RefsDemo from './components/RefsDemo';
 //import ParentComp2 from './components/ParentComp2';
 //import ParentCompMemo from './components/ParentCompMemo';
 // import Greet from './components/Greet'
@@ -26,7 +27,8 @@ import RefsDemo from './components/RefsDemo';
 function App() {
   return (
     <div className="App">
-      <RefsDemo />
+      <FocusInput />
+      {/* <RefsDemo /> */}
       {/* <ParentComp />
       <hr /> */}
       {/* <Table />
