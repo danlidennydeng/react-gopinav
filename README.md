@@ -1,12 +1,171 @@
 https://www.youtube.com/watch?v=m7OWXtbiXX8&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=9
 
 React Tutorial by Codevolution
-
-tried on white rock
-
-git pulled on white rock and it works
-
 Advanced concepts starts on lesson 25.
+-------------------------------------------------------------------------------------------------------------------
+
+Stateless Functional Component vs. Stateful Class Component
+
+Functional:
+
+* Use functional components as much as possible
+* Absence of 'this' keyword, which can be confused.
+* Solution without using state
+* Mainly responsible for the UI
+* Stateless/Dump/Presentational
+
+Class:
+
+* Maintain their own private data - state
+* Complex UI logic
+* Provide lifecycle hooks
+* Stateful/Smart/Container
+
+-------------------------------------------------------------------------------------------------------------------
+
+props vs. state
+
+props:
+
+* props get passed to the component
+* function parameters
+* props are immutable
+* props - functional components
+* this.props - class components
+
+state:
+
+* state is managed within the component
+* Variable declared in the function body
+* state can be changed
+* useState Hook - functional components
+* this.state - class components
+
+-------------------------------------------------------------------------------------------------------------------
+
+setState
+
+* always make use of setState and never modify the state directly
+* if the code has to be executed after the state has been updated, place that code in the call back function which is the second argument to the setState method.
+* When you have to update state based on the previous state value, pass in a function as argument instead of the regular object.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Lists and Keys
+
+* A "key" is a special string attribute you need to include when creating lists of elements.
+* Keys give the elements a stable identity
+* Keys help React identify which items have changed, are added.
+* Help in efficient update of the user interface.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Index as Key
+
+* The items in your list do not have a unique id.
+* The list is a static list and will not change.
+* the list will never be reordered or filtered.
+* Only use index as key as last resource.
+
+------------------------------------------------------------------------------------------------------------------
+
+Lifecycle Methods
+
+* Mounting, when an instance of a component is being created and inserted into the DOM
+1. constructor, 2. static getDrivedStateFromProps, 3. render and 4. componentDidMount
+
+* Updating, when a component is being re-rendered as a result of changes to either its props or state
+1. static getDerivedStateFromProps, 2. shouldComponentUpdate, 3. render, 4. getSnapshotBeforeUpdate, and 5. componentDidUpdate
+
+* Unmounting, when a component is being removed from the DOM
+1. componentWillUnmount
+
+* Error Handling, when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
+1. static getDerivedStateFromError and 2. componentDidCatch
+
+-----------------------------------------------------------------------------------------------------------------
+Mounting Lifecycle Methods
+
+1. constructor(props):
+
+* A special function that will get called whenever a new component is created
+* Initializing state binding the event handler
+* Do not casue side effects. Ex: HTTP requests
+* super(props) directly overwrite this.state
+
+2. static getDerivedStateFromProps(props, state):
+
+* when the state of the component depends on changes in props over time
+* Set the state
+* do not casue side effects. Ex: HTTP requests
+
+3. render():
+
+* ONLY required method
+* Read props & state and return JSX
+* Do not change state or interact with DOM or make ajax calls
+* Children components lifecycle methods are also executed.
+
+4. componentDidMount():
+
+* Cause side effects. Ex: Interact with the DOM or perform any ajax calls to load data.
+
+----------------------------------------------------------------------------------------------------------------
+
+Updating Lifecycle Methods
+
+1. static getDerivedStateFromProps(props, state):
+
+* Method is called every time a component is re-rendered
+* Set the state
+* Do not casue side effects. Ex: HTTP requests 
+
+2. shouldComponentUpdate(nextProps, nextState):
+
+* Dictates if the component should re-render or not
+* Performance optimization
+* Do not cause side effect. Ex: HTTP requests or calling the setState method
+* rarely used
+
+3. render(): 
+
+* ONLY required method
+* Read props & state and return JSX
+* Do not change state or interact with DOM or make ajax calls
+* use very offen
+
+4. getSnapshotBeforeUpdate(prevProps, prevState):
+
+* Called right before the changes from the virtual DOM are to be reflected in the DOM
+* Capture some information from the DOM
+* Method will either return null or return a value. Returned value will be passed as the third parameter to the next method.
+* rarely used
+
+5. componentDidUpdate(prevProps, prevState, snapshot):
+
+* Called after the render is finished in the re-render cycles.
+* Cause side effects
+* use very offen
+
+-----------------------------------------------------------------------------------------------------------------
+
+Unmounting Phase Method
+
+1. componentWillUnmount():
+
+* Method is invoked immediately before a component is unmounted and destroyed.
+* Cancelling any network requests, removing event handlers, canceling any subscriptions and also invalidating timers.
+* Do not call the setState method
+
+----------------------------------------------------------------------------------------------------------------
+
+Error Handling Phase Method
+
+1. static getDerivedStateFromError(error):
+
+2. componentDidCatch(error, info)
+
+* When there is an error either during rendering, in a lifecycle method, or in the constructor of any child component.
 
 ---------------------------------------------------
 Pure Component
@@ -47,3 +206,5 @@ Summary
 memo works as the same way as PureComponent for function instead of class.
 
 Ref can work in class, cannot work in function.
+
+---------------------------------------------------------------------------------------
