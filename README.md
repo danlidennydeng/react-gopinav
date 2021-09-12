@@ -208,3 +208,9 @@ memo works as the same way as PureComponent for function instead of class.
 Ref can work in class, cannot work in function.
 
 ---------------------------------------------------------------------------------------
+
+Error Boundary
+
+A class component that implements either one or both of the lifecycle methods getDerivedStateFromError or componentDidCatch becomes an error boundary.
+
+The static method getDerivedStateFromError method is used to render a fallback UI after an error is thrown and the componentDidCatch method is used to log the error information.

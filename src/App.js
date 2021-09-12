@@ -1,6 +1,29 @@
 
 import './App.css';
+import ErrorBoundary from './components/ErrorBoundary';
+import HeroError from './components/HeroError';
 import PortalDemo from './components/PortalDemo';
+
+
+function App() {
+  return (
+    <div className="App">
+      <ErrorBoundary>
+      <HeroError heroName="Batman" />
+      <HeroError heroName="superman" />
+      <HeroError heroName="Joker" />
+      </ErrorBoundary>
+      <hr />
+      <PortalDemo />
+      
+      
+      
+    </div> 
+  );
+}
+
+export default App;
+
 // import FocusInput from './components/FocusInput';
 //import FRParentInput from './components/FRParentInput';
 // import RefsDemo from './components/RefsDemo';
@@ -25,12 +48,7 @@ import PortalDemo from './components/PortalDemo';
 // import FragmentDemo from './components/FragmentDemo';
 // import Table from './components/Table';
 
-
-function App() {
-  return (
-    <div className="App">
-      <PortalDemo />
-      {/* <FRParentInput /> */}
+{/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp />
@@ -80,8 +98,3 @@ function App() {
       <Message />
 <hr />
       <Counter />*/}
-    </div> 
-  );
-}
-
-export default App;
