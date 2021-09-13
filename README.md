@@ -226,3 +226,16 @@ The placement of the Error Boundary also matters as it controls if the entire ap
 Provide a way to gracefully handler error in application code.
 
 (cannot catch event handling error, use JavaScript try and catch) 
+----------------------------------------------------------------------------------------
+
+Why Higher Order Components?
+
+to share common functionality between components
+
+A pattern where a function takes a component as an argument and returns a new component.
+
+const NewComponent = higherOrderComponent(orginalComponent)
+const EnhancedComponent = higherOrderComponent(orginalComponent)
+
+const IronMan = withSuit(TonyStark)
+
