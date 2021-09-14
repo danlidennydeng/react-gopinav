@@ -1,7 +1,10 @@
 
 import './App.css';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
+
 // import FocusInput from './components/FocusInput';
-import FRParentInput from './components/FRParentInput';
+// import FRParentInput from './components/FRParentInput';
 // import RefsDemo from './components/RefsDemo';
 //import ParentComp2 from './components/ParentComp2';
 //import ParentCompMemo from './components/ParentCompMemo';
@@ -28,7 +31,11 @@ import FRParentInput from './components/FRParentInput';
 function App() {
   return (
     <div className="App">
-      <FRParentInput />
+      <UserProvider value="Denny">
+        <ComponentC />
+      </UserProvider>
+
+      {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp />

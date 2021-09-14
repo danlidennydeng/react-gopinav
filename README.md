@@ -208,3 +208,11 @@ memo works as the same way as PureComponent for function instead of class.
 Ref can work in class, cannot work in function.
 
 ---------------------------------------------------------------------------------------
+
+Context
+
+Context provide a way to pass data through the component tree without having to pass props download manually at every level.
+
+1. Create the context
+2. provide a context value
+3. consume the context value.
