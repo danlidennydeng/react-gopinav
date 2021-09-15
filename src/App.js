@@ -1,7 +1,11 @@
 
 import './App.css';
-import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import CounterTwo from './components/CounterTwo';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import User from './components/User';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
 // import ErrorBoundary from './components/ErrorBoundary';
@@ -12,8 +16,19 @@ import HoverCounterTwo from './components/HoverCounterTwo';
 function App() {
   return (
     <div className="App">
-      <ClickCounterTwo />
+      <CounterTwo render={(count, incrementCount) => (
+      <ClickCounterTwo count={count} incrementCount={incrementCount} />
+      )}
+      />
+
+      <CounterTwo render={(count, incrementCount) => (
+      <HoverCounterTwo count={count} incrementCount={incrementCount} />
+      )}
+      />
+
+      {/* <ClickCounterTwo />
       <HoverCounterTwo />
+      <User render={ (isLoggedIn) => isLoggedIn ? 'denny': 'Guest' } /> */}
       {/* <ClickCounter name='denny' />
       <hr />
       <HoverCounter />

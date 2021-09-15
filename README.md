@@ -239,3 +239,8 @@ const EnhancedComponent = higherOrderComponent(orginalComponent)
 
 const IronMan = withSuit(TonyStark)
 
+-------------------------------------------------------------------------
+
+Render Props
+
+The term "render props" refers to a technique for sharing code between React components using a prop whose value is a function.
