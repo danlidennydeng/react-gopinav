@@ -244,3 +244,12 @@ const IronMan = withSuit(TonyStark)
 Render Props
 
 The term "render props" refers to a technique for sharing code between React components using a prop whose value is a function.
+---------------------------------------------------------------------------------------
+
+Context
+
+Context provide a way to pass data through the component tree without having to pass props download manually at every level.
+
+1. Create the context
+2. provide a context value
+3. consume the context value.

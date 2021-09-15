@@ -1,56 +1,10 @@
 
 import './App.css';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import CounterTwo from './components/CounterTwo';
-// import ClickCounterTwo from './components/ClickCounterTwo';
-// import HoverCounterTwo from './components/HoverCounterTwo';
-// import User from './components/User';
-// import ClickCounter from './components/ClickCounter';
-// import HoverCounter from './components/HoverCounter';
-// import ErrorBoundary from './components/ErrorBoundary';
-// import HeroError from './components/HeroError';
-// import PortalDemo from './components/PortalDemo';
-
-
-function App() {
-  return (
-    <div className="App">
-      <CounterTwo render={(count, incrementCount) => (
-      <ClickCounterTwo count={count} incrementCount={incrementCount} />
-      )}
-      />
-
-      <CounterTwo render={(count, incrementCount) => (
-      <HoverCounterTwo count={count} incrementCount={incrementCount} />
-      )}
-      />
-
-      {/* <ClickCounterTwo />
-      <HoverCounterTwo />
-      <User render={ (isLoggedIn) => isLoggedIn ? 'denny': 'Guest' } /> */}
-      {/* <ClickCounter name='denny' />
-      <hr />
-      <HoverCounter />
-      <hr /> */}
-      {/* <ErrorBoundary>
-      <HeroError heroName="Batman" />
-      <HeroError heroName="superman" />
-      <HeroError heroName="Joker" />
-      </ErrorBoundary>
-      <hr />
-      <PortalDemo /> */}
-      
-      
-      
-    </div> 
-  );
-}
-
-export default App;
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 // import FocusInput from './components/FocusInput';
-//import FRParentInput from './components/FRParentInput';
+// import FRParentInput from './components/FRParentInput';
 // import RefsDemo from './components/RefsDemo';
 //import ParentComp2 from './components/ParentComp2';
 //import ParentCompMemo from './components/ParentCompMemo';
@@ -73,7 +27,15 @@ export default App;
 // import FragmentDemo from './components/FragmentDemo';
 // import Table from './components/Table';
 
-{/* <FRParentInput /> */}
+
+function App() {
+  return (
+    <div className="App">
+      <UserProvider value="Denny">
+        <ComponentC />
+      </UserProvider>
+
+      {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp />
