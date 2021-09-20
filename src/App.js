@@ -34,54 +34,8 @@ function App() {
       <UserProvider value="Denny">
         <ComponentC />
       </UserProvider>
+    </div>
+  )
+}
 
-      {/* <FRParentInput /> */}
-      {/* <FocusInput /> */}
-      {/* <RefsDemo /> */}
-      {/* <ParentComp />
-      <hr /> */}
-      {/* <Table />
-      <hr />
-      <FragmentDemo />
-      <hr />
-      <LifecycleA />
-      <hr />
-      <Form />
-      <hr />
-      <h2 className='error'>Error</h2>
-      <h2 className={styles.success}>Success</h2>
-      <Inline />
-      <hr />
-       <Stylesheet primary={true}/>
-      <hr />
-      <NameList />
-      <hr />
-      <NameList2 />
-      <hr />
-      <UserGreeting3 />
-      <hr />
-      <ParentComponent1 />
-      <hr />
-      
-      <ClassClick />
-      <hr />
-      <FunctionClick />
-      <hr /> */}
-      {/* <Greet name="Bruce" heroName="Batman">
-        <p>wei</p>
-      </Greet>
-      <hr />
-      <Greet name="Clark" heroName="Superman">
-        <button>Press</button>
-      </Greet>
-      <hr />
-      <Greet name="Denny" heroName="Developer">
-      </Greet>
-      <hr /> */}
-      {/* <Welcome name="Diana" heroName="Wonderwoman">
-      <button>Press</button>
-      </Welcome>
-      <hr />
-      <Message />
-<hr />
-      <Counter />*/}
+export default App;
