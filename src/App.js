@@ -1,7 +1,8 @@
 
 import './App.css';
-import ComponentC from './components/ComponentC';
-import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+// import ComponentC from './components/ComponentC';
+// import { UserProvider } from './components/userContext';
 
 // import FocusInput from './components/FocusInput';
 // import FRParentInput from './components/FRParentInput';
@@ -31,9 +32,10 @@ import { UserProvider } from './components/userContext';
 function App() {
   return (
     <div className="App">
-      <UserProvider value="Denny">
+      <PostList />
+      {/* <UserProvider value="Denny">
         <ComponentC />
-      </UserProvider>
+      </UserProvider> */}
     </div>
   )
 }
