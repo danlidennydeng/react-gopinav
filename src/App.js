@@ -1,6 +1,7 @@
 
 import './App.css';
-import PostList from './components/PostList';
+import PostForm from './components/PostForm';
+// import PostList from './components/PostList';
 // import ComponentC from './components/ComponentC';
 // import { UserProvider } from './components/userContext';
 
@@ -32,7 +33,8 @@ import PostList from './components/PostList';
 function App() {
   return (
     <div className="App">
-      <PostList />
+      <PostForm />
+      {/* <PostList /> */}
       {/* <UserProvider value="Denny">
         <ComponentC />
       </UserProvider> */}
