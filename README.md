@@ -4,6 +4,13 @@ React Tutorial by Codevolution
 Advanced concepts starts on lesson 25.
 -------------------------------------------------------------------------------------------------------------------
 
+Prerequisites:
+----------------
+HTML, CSS and JavaScript fundamentals
+JavaScript - "this" keyword, filter, map and reduce
+ES6 - let & const, arrow functions, template literals, default parameters, object literals, rest and spread operators and destructuring assignment.
+------------------------------------------------------------------------------
+
 Stateless Functional Component vs. Stateful Class Component
 
 Functional:
