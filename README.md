@@ -10,7 +10,13 @@ HTML, CSS and JavaScript fundamentals
 JavaScript - "this" keyword, filter, map and reduce
 ES6 - let & const, arrow functions, template literals, default parameters, object literals, rest and spread operators and destructuring assignment.
 ------------------------------------------------------------------------------
+JSX
 
+is extension to the javascript language syntax.
+is not necessity to write react application.
+ultimately transpiles to pure javascript which is understood by the browser.
+
+====================================================
 Stateless Functional Component vs. Stateful Class Component
 
 Functional:
@@ -29,6 +35,15 @@ Class:
 * Stateful/Smart/Container
 
 -------------------------------------------------------------------------------------------------------------------
+Hooks
+-----
+No breaking changes
+completely opt-in & 100% backwards-compatible
+whatever we have learned the react without hooks still holds good.
+component types - Functional components and Class components.
+using state, lifecycle methods and 'this' binding
+---------------------------------------------------------------------
+
 
 props vs. state
 
@@ -77,6 +92,7 @@ Index as Key
 ------------------------------------------------------------------------------------------------------------------
 
 Lifecycle Methods
+are only for Class components
 
 * Mounting, when an instance of a component is being created and inserted into the DOM
 1. constructor, 2. static getDrivedStateFromProps, 3. render and 4. componentDidMount
